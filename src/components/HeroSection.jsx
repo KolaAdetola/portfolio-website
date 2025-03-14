@@ -10,7 +10,7 @@ const HeroSection = () => {
         <div className="col-span-7 place-self-center text-center sm:text-left ">
           <h1 className="text-[#eaf0f6] mb-4 font-extrabold text-4xl sm:text-5xl lg:text-6xl ">
             Hello, I'm{" "} <br />
-            <span className="text-[#00D4FF]">
+            <span className="text-[#00BAFE]">
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
