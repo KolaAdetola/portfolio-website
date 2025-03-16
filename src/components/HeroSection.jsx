@@ -16,7 +16,7 @@ const HeroSection = () => {
                   // Same substring at the start will only be typed out once, initially
                   "Kolawole Adetola",
                   1000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "Fullstack Developer",
+                  "a Fullstack Developer",
                   1000,
                   
                 ]}
@@ -43,7 +43,7 @@ const HeroSection = () => {
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] size-[250px] lg:size-[300px] p-4 relative ">
             <Image
-              src="/images/lol.svg"
+              src="/images/Happy.svg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 "
               width={300}
