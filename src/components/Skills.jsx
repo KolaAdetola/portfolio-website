@@ -1,89 +1,128 @@
-import React from "react";
-import Tewls from "./Tewls";
+"use client"
+import Image from "next/image";
+import React, { useState } from "react";
 
 const Skills = () => {
-  const tools = [
+  const [activeTab, setActiveTab] = useState("frontend"); // State to track active tab
+
+  const frontendTools = [
     {
-      image: "/images/css.svg",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+      name: "HTML",
+      description: "Markup language",
+    },
+    {
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
       name: "CSS",
       description: "Stylesheet language",
     },
     {
-      image: "/images/javascript.svg",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       name: "JavaScript",
       description: "Programming language",
     },
     {
-      image: "/images/typescript.svg",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       name: "TypeScript",
       description: "Typed JavaScript",
     },
     {
-      image: "/images/react.svg",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
       name: "React",
       description: "UI library",
     },
     {
-      image: "/images/nodejs.svg",
-      name: "Node.js",
-      description: "JS runtime",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      name: "Next.js",
+      description: "React framework",
     },
     {
-      image: "/images/express.svg",
-      name: "Express.js",
-      description: "Backend framework",
-    },
-    {
-      image: "/images/mongodb.svg",
-      name: "MongoDB",
-      description: "NoSQL database",
-    },
-    {
-      image: ``,
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       name: "Tailwind CSS",
       description: "CSS framework",
     },
     {
-      image: "/images/figma.svg",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
       name: "Figma",
       description: "Design tool",
     },
   ];
+
+  const backendTools = [
+    {
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      name: "Node.js",
+      description: "JS runtime",
+    },
+    {
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg",
+      name: "Express.js",
+      description: "Backend framework",
+    },
+    {
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      name: "MongoDB",
+      description: "NoSQL database",
+    },
+    {
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+      name: "Postman API",
+      description: "API testing tool",
+    },
+  ];
+
+  const activeTools = activeTab === "frontend" ? frontendTools : backendTools;
+
   return (
-    <div className="text-4xl text-center mt-10 ">
-      <div className=" ">
+    <div className="text-4xl text-center mt-10">
+      <div>
         Skills
         <span className="text-[#00BAFE]"> & </span>
         Tools
       </div>
-      <div className="sm:grid-cols-3 grid gap-4 mt-4">
-        <div className="w-full  rounded-2xl border-2 border-gray-400 px-4 py-4 flex items-center ">
-          <div className="p-2 flex items-center justify-center rounded-lg bg-[#181818] ">
-            <svg viewBox="0 0 128 128" width={"35px"} height={"35px"}>
-              <path
-                d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
-                fill="#38bdf8"
-              ></path>
-            </svg>
+
+      {/* Tab Section */}
+      <div className="flex justify-center mt-6 space-x-4">
+        <button
+          onClick={() => setActiveTab("frontend")}
+          className={`px-4 py-2 rounded-md text-lg font-semibold ${
+            activeTab === "frontend"
+              ? " bg-white text-black font-semibold"
+              : "bg-black text-white font-semibold border-2 border-white"
+          }`}
+        >
+          Frontend
+        </button>
+        <button
+          onClick={() => setActiveTab("backend")}
+          className={`px-4 py-2 rounded-md text-lg font-semibold ${
+            activeTab === "backend"
+              ? "bg-white text-black font-semibold border-2 "
+              : "bg-black text-white font-semibold border-2 border-white"
+          }`}
+        >
+          Backend
+        </button>
+      </div>
+
+      {/* Tools Grid */}
+      <div className="sm:grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-3 space-y-3 sm:space-y-0 mt-6">
+        {activeTools.map((tool) => (
+          <div
+            key={tool.name}
+            className="w-full rounded-2xl border-2 border-[#151518] px-2.5 py-2 flex items-center hover:bg-[#1c1c20] hover:cursor-pointer"
+          >
+            <div className="p-2 flex items-center justify-center rounded-lg bg-[#181818]">
+              <Image src={tool.image} alt={tool.name} width={30} height={30} />
+            </div>
+            <div className="text-lg ml-4 w-full text-start">
+              <h1 className="text-md text-white">{tool.name}</h1>
+              <h2 className="text-md text-gray-400 whitespace-nowrap">
+                {tool.description}
+              </h2>
+            </div>
           </div>
-          <div className="text-lg ml-4 w-full text-start ">
-            {tools.map((tool, index) => {
-              return (
-                <div key={index} className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <img src={tool.image} alt={tool.name} className="w-8 h-8" />
-                    <div className="ml-2">
-                      <h1 className="text-2xl text-white">{tool.name}</h1>
-                      <h2 className="text-xl text-gray-400">
-                        {tool.description}
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
