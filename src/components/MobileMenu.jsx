@@ -15,8 +15,8 @@ const MobileMenu = () => {
         </Link>
       </li>
       <li className=" w-full  text-center p-2 rounded-lg cursor-pointer  place-items-center text-white  sm:text-lg font-semibold hover:bg-[#1e20248f]  ">
-        <Link href="#services" className="">
-          Services
+        <Link href="#skills" className="">
+          Skills
         </Link>
       </li>
       <li className=" w-full  text-center p-2 rounded-lg cursor-pointer  place-items-center text-white  sm:text-lg font-semibold hover:bg-[#1e20248f]  ">

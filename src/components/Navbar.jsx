@@ -54,13 +54,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="  p-2 rounded-lg cursor-pointer  place-items-center text-white  sm:text-lg font-semibold">
-              <Link href="#services" className="">
-                Services
+              <Link href="#skills" className="">
+                Skills
               </Link>
             </li>
             <button className="btn btn-info  sm:text-lg font-semibold rounded-lg cursor-pointer place-items-center text-white">
               <Link href="#contact" className="text-white">
-                Contact
+                Contact Me
               </Link>
             </button>
           </ul>
