@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import Certications from "@/components/Certications";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HeroSection />
         <About/>
         <Skills/>
+        <Certications/>
       </div>
     </div>
   );
