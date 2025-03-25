@@ -38,7 +38,7 @@ const Certications = () => {
   return (
     <div className="text-4xl text-center mt-10">
         Projects
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-10 p-4  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 p-4  ">
           {projects.map((project, index) => (
             <ProjectCard key={index} ImgUrl={project.ImgUrl} title={project.title} description={project.description} link={project.links} />
           ))}

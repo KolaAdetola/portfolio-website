@@ -1,21 +1,23 @@
 import React from "react";
+import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
-const ProjectCard = ({ ImgUrl, title,link }) => {
+const ProjectCard = ({ ImgUrl, title, link }) => {
   return (
-    <div className="bg-[#181818] p-4 rounded-lg shadow-lg">
+    <div className=" bg-[#181818] rounded-lg shadow-lg">
       <div
-        className="h-42 sm:h-52  rounded-lg"
+        className="h-42 sm:h-52 rounded-t-xl relative group "
         style={{ background: `url(${ImgUrl})`, backgroundSize: "cover" }}
-      ></div>
-      <div className=" flex justify-between flex-row ">
+      >
+      </div>
+      <div className=" px-4 py-2 flex justify-between flex-row ">
         <div className="">
           <h1 className="text-start text-xl capitalize text-white mt-4 font-semibold">
             {title}
           </h1>
-          
         </div>
-        <div className="mt-8 hover:cursor-pointer">
-          <a href={link} target="_blank" >
+        <div className="mt-5 hover:cursor-pointer">
+          <a href={link} target="_blank">
             <svg
               width="40px"
               height="40px"
