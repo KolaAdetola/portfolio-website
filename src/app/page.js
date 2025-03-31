@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Certications from "@/components/Certications";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <About/>
         <Skills/>
         <Certications/>
+        <Contact/>
       </div>
     </div>
   );
