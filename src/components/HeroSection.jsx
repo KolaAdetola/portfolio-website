@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const images = ["/images/Happy.svg", "/images/tears.svg", "/images/tongue.svg"];
+const images = ["/images/Happy.svg", "/images/tears.svg", "/images/tongue.svg", "/images/knuckle.svg", "/images/wink.svg"];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -83,7 +83,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
+          <div
             className="rounded-full bg-[#181818] size-[250px] lg:size-[300px] p-4 relative"
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
@@ -106,7 +106,7 @@ const HeroSection = () => {
                 />
               </motion.div>
             </AnimatePresence>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>
