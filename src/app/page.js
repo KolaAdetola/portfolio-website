@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import Certications from "@/components/Certications";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Skills />
         <Certications />
+        <Analytics/>
         <Contact />
       </div>
       <Footer />
