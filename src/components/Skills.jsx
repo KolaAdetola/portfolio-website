@@ -74,7 +74,7 @@ const Skills = () => {
   const activeTools = activeTab === "frontend" ? frontendTools : backendTools;
 
   return (
-    <div className="text-4xl text-center mt-10">
+    <div className="text-4xl text-center mt-10 scroll-mt-28 " id="skills">
       <div>
         Skills
         <span className="text-[#00BAFE]"> & </span>

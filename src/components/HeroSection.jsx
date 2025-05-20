@@ -5,7 +5,13 @@ import { TypeAnimation } from "react-type-animation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const images = ["/images/Happy.svg", "/images/tears.svg", "/images/tongue.svg", "/images/knuckle.svg", "/images/wink.svg"];
+const images = [
+  "/images/Happy.svg",
+  "/images/tears.svg",
+  "/images/tongue.svg",
+  "/images/knuckle.svg",
+  "/images/wink.svg",
+];
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -24,7 +30,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="mt-24 px-4" aria-label="Hero Section">
+    <section id="home" className="mt-24 px-4 scroll-m-28" aria-label="Hero Section">
       <div className="grid grid-cols-1 sm:grid-cols-12 gap-4">
         {/* Text Section */}
         <motion.div
@@ -54,9 +60,9 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-[#ADB7BE] dark:text-gray-300 mb-6 text-base sm:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-            fringilla turpis. Nullam euismod, ex a dapibus ultricies, est libero
-            fermentum ex, sit amet tincidunt mi turpis nec ante.
+            I specialize in crafting responsive, full-stack web applications
+            using React, Next.js, Node.js, and more. My mission is to solve
+            real-world problems with technology that scales.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
             <Link
@@ -64,14 +70,14 @@ const HeroSection = () => {
               scroll={true}
               className="rounded-full w-full sm:w-fit px-6 py-3 bg-white hover:bg-slate-200 text-black text-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Hire me
+              Let's Work Together
             </Link>
             <a
               href="/files/Kolawole_Adetola_CV.pdf"
               download
               className="rounded-full w-full sm:w-fit px-6 py-3 bg-transparent hover:bg-gray-900 text-white border-2 border-white mt-3 sm:mt-0 text-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
-              Download CV
+              View My Resume (PDF)
             </a>
           </div>
         </motion.div>

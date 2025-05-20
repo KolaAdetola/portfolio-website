@@ -8,6 +8,7 @@ import Certications from "@/components/Certications";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next"
+import AnimatedStats from "@/components/Stat";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <Skills />
+        <AnimatedStats />
         <Certications />
         <Analytics/>
         <Contact />

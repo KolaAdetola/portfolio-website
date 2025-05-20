@@ -8,7 +8,7 @@ import MobileMenu from "./MobileMenu";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="bg-[#010409]/10 backdrop-blur-lg shadow-lg fixed w-full top-0 left-0 z-50  ">
+    <nav className="bg-[#010409]/10 backdrop-blur-lg scroll-mt-28 shadow-lg fixed w-full top-0 left-0 z-50  ">
       <div className="flex items-center justify-between px-5 py-2 flex-wrap mx-auto  ">
         <Link href={"/"} className="text-5xl text-white text-semibold">
           <Image src="/images/logo.png" alt="logo" width={150} height={150} />
@@ -44,22 +44,22 @@ const Navbar = () => {
         <div className="menu hidden sm:block sm:w-auto " id="navbar">
           <ul className="flex flex-col sm:flex-row items-center sm:space-x-4   ">
             <li className="  p-2 rounded-lg cursor-pointer place-items-center text-white  sm:text-lg font-semibold">
-              <Link href="#" className="text-white">
+              <Link href="#home" scroll={true} className="text-white">
                 Home
               </Link>
             </li>
             <li className="  p-2 rounded-lg cursor-pointer  place-items-center text-white  sm:text-lg font-semibold">
-              <Link href="#about" className="text-white">
+              <Link href="#about"  scroll={true} className="text-white">
                 About
               </Link>
             </li>
             <li className="  p-2 rounded-lg cursor-pointer  place-items-center text-white  sm:text-lg font-semibold">
-              <Link href="#skills" className="">
+              <Link href="#skills" scroll={true} className="">
                 Skills
               </Link>
             </li>
             <button className="btn btn-info  sm:text-lg font-semibold rounded-lg cursor-pointer place-items-center text-white">
-              <Link href="#contact" className="text-white">
+              <Link href="#contact" scroll={true} className="text-white">
                 Contact Me
               </Link>
             </button>

@@ -14,10 +14,12 @@
     "@vercel/analytics": "^1.5.0",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.12.1",
+    "lucide-react": "^0.511.0",
     "mongoose": "^8.10.1",
     "next": "15.2.2",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
     "react-type-animation": "^3.2.0"
