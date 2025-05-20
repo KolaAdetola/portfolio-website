@@ -40,9 +40,7 @@ const AnimatedStats = () => {
   return (
     <section className="py-12 my-14 rounded-sm bg-[#181818] text-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-[#00BAFE]">
-          At a Glance
-        </h2>
+        
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 text-center">
           {stats.map((stat, i) => (
