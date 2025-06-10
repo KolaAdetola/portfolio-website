@@ -68,12 +68,15 @@ const HeroSection = () => {
             <Link
               href="#contact"
               scroll={true}
+              aria-label="Navigate to Contact Section"
               className="rounded-full w-full sm:w-fit px-6 py-3 bg-white hover:bg-slate-200 text-black text-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
               Let's Work Together
             </Link>
             <a
-              href="/files/Kolawole_Adetola_CV.pdf"
+              href="https://drive.google.com/file/d/1FwPPEz2Mwc7q_7QIY-ZVPTN49_qdFQS1/view"
+              target="_blank"
+              rel="noopener noreferrer"
               download
               className="rounded-full w-full sm:w-fit px-6 py-3 bg-transparent hover:bg-gray-900 text-white border-2 border-white mt-3 sm:mt-0 text-center cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
             >
