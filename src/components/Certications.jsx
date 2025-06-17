@@ -33,7 +33,7 @@ const Certications = () => {
     {
       ImgUrl: "/images/learnly.jpeg",
       title: "Chat/Exam Management system",
-      links:""
+      links:"https://github.com/KolaAdetola/portfolio-website.git"
     },
     {
       ImgUrl: "/images/quote.jpeg",
