@@ -16,7 +16,7 @@
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.511.0",
     "mongoose": "^8.10.1",
-    "next": "15.2.2",
+    "next": "15.2.8",
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
